@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd" class="com.company.demo.web.ExtAppMainWindow"
+        messagesPack="com.company.demo.web" extends="/com/haulmont/cuba/web/app/mainwindow/mainwindow.xml">
+    <dialogMode height="600" width="800"/>
+    <layout>
+        <split id="foldersSplit">
+            <workArea id="workArea">
+                <initialLayout>
+                    <suggestionPickerField id="placesSuggestionPicker"
+                                           metaClass="demo_Place"
+                                           caption="Places search"
+                                           width="300px">
+                        <actions>
+                            <action id="clear"/>
+                        </actions>
+                    </suggestionPickerField>
+                </initialLayout>
+            </workArea>
+        </split>
+    </layout>
+</window>
